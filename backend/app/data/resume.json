@@ -1,0 +1,28 @@
+{
+  "name": "Kiprono Daniel Yegon",
+  "title": "Cloud & DevOps Engineer",
+  "location": "Kenya",
+  "summary": "Building automated cloud infrastructure using AWS, Azure, Docker, Kubernetes, Terraform and GitHub Actions.",
+
+  "skills": [
+    "AWS",
+    "Azure",
+    "Docker",
+    "Kubernetes",
+    "Terraform",
+    "Python",
+    "React",
+    "GitHub Actions"
+  ],
+
+  "projects": [
+    {
+      "name": "Multi-Cloud Resume Platform",
+      "description": "Portfolio demonstrating AWS, Azure and CI/CD."
+    },
+    {
+      "name": "Terraform AWS Infrastructure",
+      "description": "Provisioned cloud infrastructure using Terraform."
+    }
+  ]
+}

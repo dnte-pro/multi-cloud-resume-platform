@@ -1,3 +1,4 @@
+import "./App.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -8,21 +9,18 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <>
+    <div className="app-shell">
       <Navbar />
 
-      <Hero />
-
-      <About />
-
-      <Skills />
-
-      <Projects />
-
-      <VisitorCounter />
-
-      <Contact />
-    </>
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <VisitorCounter />
+        <Contact />
+      </main>
+    </div>
   );
 }
 

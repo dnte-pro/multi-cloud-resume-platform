@@ -1,39 +1,32 @@
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center text-center px-6">
+    <section id="top" className="hero-section">
+      <div className="hero-section__content">
+        <p className="eyebrow">Cloud infrastructure • automation • platform engineering</p>
 
-      <h1 className="text-6xl font-black">
-        Kiprono Daniel Yegon
-      </h1>
+        <h1 className="hero-title">
+          Kiprono Daniel Yegon
+        </h1>
 
-      <h2 className="text-2xl text-blue-400 mt-4">
-        Cloud & DevOps Engineer
-      </h2>
+        <h2 className="hero-subtitle">
+          Cloud & DevOps Engineer
+        </h2>
 
-      <p className="max-w-2xl mt-8 text-slate-300 text-lg">
+        <p className="hero-copy">
+          Building automated cloud deployments with AWS, Azure, Docker,
+          Kubernetes, Terraform, and GitHub Actions.
+        </p>
 
-        Building automated cloud deployments with AWS,
-        Azure, Docker, Kubernetes, Terraform and GitHub
-        Actions.
+        <div className="hero-actions">
+          <a className="button button--primary" href="#projects">
+            View Projects
+          </a>
 
-      </p>
-
-      <div className="mt-10 flex gap-4">
-
-        <button className="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700">
-
-          View Projects
-
-        </button>
-
-        <button className="border border-blue-500 px-6 py-3 rounded-lg">
-
-          Contact Me
-
-        </button>
-
+          <a className="button button--secondary" href="#contact">
+            Contact Me
+          </a>
+        </div>
       </div>
-
     </section>
   );
 }

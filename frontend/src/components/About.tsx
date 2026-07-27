@@ -2,15 +2,19 @@ export default function About() {
   return (
     <section
     id="about"
-     className="max-w-6xl mx-auto py-24 px-6"
+     className="content-section"
     >
-      <h2>About</h2>
+      <div className="section-card">
+        <p className="section-kicker">About</p>
 
-      <p>
-        I am a Cloud and DevOps Engineer passionate about
-        infrastructure automation, Kubernetes, CI/CD pipelines,
-        and cloud-native application deployment.
-      </p>
+        <h2 className="section-title">Infrastructure with intent</h2>
+
+        <p className="section-copy">
+          I am a Cloud and DevOps Engineer passionate about infrastructure
+          automation, Kubernetes, CI/CD pipelines, and cloud-native application
+          deployment.
+        </p>
+      </div>
     </section>
   );
 }
