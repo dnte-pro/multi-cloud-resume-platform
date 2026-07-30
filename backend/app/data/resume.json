@@ -23,6 +23,12 @@
     {
       "name": "Terraform AWS Infrastructure",
       "description": "Provisioned cloud infrastructure using Terraform."
+    },
+
+    {
+      "name": "Kubernetes Deployment",
+      "description": "Deployed applications on Kubernetes clusters."
     }
+
   ]
 }

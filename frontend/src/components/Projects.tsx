@@ -1,4 +1,8 @@
-export default function Projects() {
+import type { Project } from "../api/api";
+
+type ProjectsProps = { projects?: Project[] };
+
+export default function Projects({ projects }: ProjectsProps) {
   return (
     <section id="projects" className="content-section">
       <div className="section-card">
@@ -6,9 +10,12 @@ export default function Projects() {
         <h2 className="section-title">Selected work</h2>
 
         <ul className="project-grid">
-          <li>Multi-Cloud Resume Platform</li>
-          <li>Kubernetes Deployment Platform</li>
-          <li>AWS Infrastructure with Terraform</li>
+          {(projects ?? []).map((project) => (
+            <li key={project.name}>
+              <strong>{project.name}</strong>
+              <span>{project.description}</span>
+            </li>
+          ))}
         </ul>
       </div>
     </section>

@@ -318,6 +318,17 @@ main {
     rgba(125, 211, 252, 0.05);
 }
 
+.project-grid strong,
+.project-grid span {
+  display: block;
+}
+
+.project-grid span {
+  margin-top: 8px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
 .contact-grid {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }

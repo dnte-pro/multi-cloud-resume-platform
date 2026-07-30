@@ -1,4 +1,6 @@
-export default function Skills() {
+type SkillsProps = { skills?: string[] };
+
+export default function Skills({ skills }: SkillsProps) {
   return (
     <section id="skills" className="content-section">
       <div className="section-card">
@@ -6,14 +8,7 @@ export default function Skills() {
         <h2 className="section-title">Tools I use to ship systems</h2>
 
         <ul className="skill-grid">
-          <li>AWS</li>
-          <li>Azure</li>
-          <li>Docker</li>
-          <li>Kubernetes</li>
-          <li>Terraform</li>
-          <li>GitHub Actions</li>
-          <li>Python</li>
-          <li>React</li>
+          {(skills ?? []).map((skill) => <li key={skill}>{skill}</li>)}
         </ul>
       </div>
     </section>
